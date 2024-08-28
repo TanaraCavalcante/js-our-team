@@ -35,10 +35,12 @@ let items = ''
 for (let i = 0; i < team.length; i++){
     const person = team[i];
     items += `
-    <img  src="img/${person.photo}" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title">${person.name}</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">${person.profession}</h6>
+    <div  class="card my-2" style="width: 18rem;">
+        <img  src="img/${person.photo}" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">${person.name}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">${person.profession}</h6>
+        </div>
     </div>
     `
 }
