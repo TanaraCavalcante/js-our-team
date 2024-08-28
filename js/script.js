@@ -9,17 +9,17 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe.*/
 
 //TODO RACCOLTA DATI
-
+const card = document.getElementById('card');
 
 //TODO ELABORAZIONE
 //Creare un array del team
 const team = [
-    {name:'Wayne Barnett', Profession:'Founder & CEO' , photo:'wayne-barnett-founder-ceo.jpg'},
-    {name:'Angela Caroll', Profession:'Chief Editor', photo:'angela-caroll-chief-editor.jpg'},
-    {name:'Walter Gordon', Profession:'Office Manager', photo:'Office Manager'},
-    {name:'Angela Lopez', Profession:'Social Media Manager', photo:'angela-lopez-social-media-manager.jpg'},
-    {name:'Scott Estrada', Profession:'Developer', photo:'scott-estrada-developer.jpg'},
-    {name:'Barbara Ramos', Profession:'Graphic Designer', photo:'barbara-ramos-graphic-designer.jpg'},
+    {name:'Wayne Barnett', profession:'Founder & CEO' , photo:'wayne-barnett-founder-ceo.jpg'},
+    {name:'Angela Caroll', profession:'Chief Editor', photo:'angela-caroll-chief-editor.jpg'},
+    {name:'Walter Gordon', profession:'Office Manager', photo:'walter-gordon-office-manager.jpg'},
+    {name:'Angela Lopez', profession:'Social Media Manager', photo:'angela-lopez-social-media-manager.jpg'},
+    {name:'Scott Estrada', profession:'Developer', photo:'scott-estrada-developer.jpg'},
+    {name:'Barbara Ramos', profession:'Graphic Designer', photo:'barbara-ramos-graphic-designer.jpg'},
 ]
 //Stampare su Console
 console.table(team);
@@ -31,3 +31,16 @@ for (let i = 0; i < team.length; i++){
 }
    
 //TODO OUTPUT
+let items = ''
+for (let i = 0; i < team.length; i++){
+    const person = team[i];
+    items += `
+    <img  src="img/${person.photo}" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">${person.name}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">${person.profession}</h6>
+    </div>
+    `
+}
+
+card.innerHTML = items;
