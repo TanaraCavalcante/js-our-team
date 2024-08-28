@@ -27,7 +27,8 @@ const team = [
 console.table(team);
 
 //TODO OUTPUT
-let card = '';
 for (let person of team ){
-
+ console.log(team.photo);
+ console.log(team.name);
+ console.log(team.Profession);
 }
