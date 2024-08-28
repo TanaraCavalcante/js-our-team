@@ -11,7 +11,7 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe.*/
 
 //TODO ELABORAZIONE
 //Creare un array del team
-Const team = [
+const team = [
     {name:'Wayne Barnett', Profession:'Founder & CEO' , Photo:'wayne-barnett-founder-ceo.jpg'},
     {name:'Angela Caroll', Profession:'Chief Editor' , Photo:'angela-caroll-chief-editor.jpg'},
     {name:'Walter Gordon', Profession:'Office Manager', Photo:'Office Manager'},
@@ -20,5 +20,6 @@ Const team = [
     {name:'Barbara Ramos', Profession:'Graphic Designer', Photo:'barbara-ramos-graphic-designer.jpg'},
 ]
 //Stampare su Console
+console.table(team);
 
 //TODO OUTPUT
