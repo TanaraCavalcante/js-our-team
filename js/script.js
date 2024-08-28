@@ -9,44 +9,25 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe.*/
 
 //TODO RACCOLTA DATI
- 
+const photoField = document.getElementById('photo');
+const nameField = document.getElementById('name');
+const professionField = document.getElementById('profession');
 
 //TODO ELABORAZIONE
 //Creare un array del team
 const team = [
-    {
-     name:'Wayne Barnett', 
-     Profession:'Founder & CEO' , 
-     Photo:'wayne-barnett-founder-ceo.jpg'
-    },
-    {
-     name:'Angela Caroll', 
-     Profession:'Chief Editor', 
-     Photo:'angela-caroll-chief-editor.jpg'
-    },
-    {
-     name:'Walter Gordon', 
-     Profession:'Office Manager',
-     Photo:'Office Manager'
-    },
-    {
-     name:'Angela Lopez', 
-     Profession:'Social Media Manager', 
-     Photo:'angela-lopez-social-media-manager.jpg'
-    },
-    {
-     name:'Scott Estrada', 
-     Profession:'Developer', 
-     Photo:'scott-estrada-developer.jpg'
-    },
-    {
-     name:'Barbara Ramos', 
-     Profession:'Graphic Designer', 
-     Photo:'barbara-ramos-graphic-designer.jpg'
-    },
+    {name:'Wayne Barnett', Profession:'Founder & CEO' , Photo:'wayne-barnett-founder-ceo.jpg'},
+    {name:'Angela Caroll', Profession:'Chief Editor', Photo:'angela-caroll-chief-editor.jpg'},
+    {name:'Walter Gordon', Profession:'Office Manager', Photo:'Office Manager'},
+    {name:'Angela Lopez', Profession:'Social Media Manager', Photo:'angela-lopez-social-media-manager.jpg'},
+    {name:'Scott Estrada', Profession:'Developer', Photo:'scott-estrada-developer.jpg'},
+    {name:'Barbara Ramos', Profession:'Graphic Designer', Photo:'barbara-ramos-graphic-designer.jpg'},
 ]
 //Stampare su Console
 console.table(team);
 
 //TODO OUTPUT
+let card = '';
+for (let person of team ){
 
+}
